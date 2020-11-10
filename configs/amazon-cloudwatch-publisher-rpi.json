@@ -7,7 +7,7 @@
     "authentication": {
       "iotUrl": "c22qczooe1nmj4.credentials.iot.us-east-1.amazonaws.com",
       "roleAlias": "UMB-BLOWER-RPI-V4-TYPE-logs-access-role-alias",
-      "thingName": "thingName",
+      "thingName": "THINGNAME",
       "certificate": [
         "/home/pi/certificate/certificate.pem",
         "/home/pi/certificate/private_key.key"
