@@ -9,8 +9,8 @@
       "roleAlias": "UMB-BLOWER-RPI-V4-TYPE-logs-access-role-alias",
       "thingName": "THINGNAME",
       "certificate": [
-        "/home/pi/certificate/THINGNAME-certificate.pem",
-        "/home/pi/certificate/THINGNAME-private_key.key"
+        "/home/pi/certificate-THINGNAME/certificate.pem",
+        "/home/pi/certificate-THINGNAME/private_key.key"
       ]
     },
     "region": "us-east-1",
