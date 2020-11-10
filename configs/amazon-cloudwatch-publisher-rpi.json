@@ -5,13 +5,15 @@
       "command": "cat /proc/cpuinfo | grep Serial | awk '{print $NF}'"
     },
     "authentication": {
-      "accountId": "ACCOUNT_ID",
-      "userPoolId": "USER_POOL_ID",
-      "identityPoolId": "IDENTITY_POOL_ID",
-      "appClientId": "APP_CLIENT_ID",
-      "password": "PASSWORD"
+      "iotUrl": "c22qczooe1nmj4.credentials.iot.us-east-1.amazonaws.com",
+      "roleAlias": "UMB-BLOWER-RPI-V4-TYPE-logs-access-role-alias",
+      "thingName": "thingName",
+      "certificate": [
+        "/home/pi/certificate/certificate.pem",
+        "/home/pi/certificate/private_key.key"
+      ]
     },
-    "region": "REGION",
+    "region": "us-east-1",
     "metrics_collection_interval": 60,
     "logs_collection_interval": 10,
     "logfile": "/opt/aws/amazon-cloudwatch-publisher/logs/amazon-cloudwatch-publisher.log",
