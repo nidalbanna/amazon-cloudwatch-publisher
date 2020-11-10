@@ -22,7 +22,7 @@ chmod -R u+rwX,g-rwx,o-rwx /opt/aws/amazon-cloudwatch-publisher
 
 # Write configuration file details
 read -p "thingName: " thingName
-sed -i "s/thingName/$thingName/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
+sed -i "s/THINGNAME/$thingName/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
 
 
 
