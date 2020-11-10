@@ -21,18 +21,9 @@ chmod -R u+rwX,g-rwx,o-rwx /opt/aws/amazon-cloudwatch-publisher
 
 
 # Write configuration file details
-read -p "Region: " region
-read -p "Account ID: " account_id
-read -p "User Pool ID: " user_pool_id
-read -p "Identity Pool ID: " identity_pool_id
-read -p "App Client ID: " app_client_id
-read -p "Password: " password
-sed -i "s/REGION/$region/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
-sed -i "s/ACCOUNT_ID/$account_id/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
-sed -i "s/USER_POOL_ID/$user_pool_id/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
-sed -i "s/IDENTITY_POOL_ID/$identity_pool_id/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
-sed -i "s/APP_CLIENT_ID/$app_client_id/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
-sed -i "s/PASSWORD/$password/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
+read -p "thingName: " thingName
+sed -i "s/thingName/$thingName/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
+
 
 
 # Write the daemon configuration file
