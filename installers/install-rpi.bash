@@ -21,7 +21,7 @@ chmod -R u+rwX,g-rwx,o-rwx /opt/aws/amazon-cloudwatch-publisher
 
 
 # Write configuration file details
-thingName=cat /proc/cpuinfo | grep Serial | awk '{print $NF}'
+thingName=`cat /proc/cpuinfo | grep Serial | awk '{print $NF}'`
 sed -i "s/THINGNAME/$thingName/" /opt/aws/amazon-cloudwatch-publisher/etc/amazon-cloudwatch-publisher.json
 
 
